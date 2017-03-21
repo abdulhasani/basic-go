@@ -5,6 +5,11 @@ import (
 	"time"
 )
 
+/**
+Switch pada go-lang memiliki perbedaan dengan bahasa pemrograman lainnya misalnya java,
+ketika sebuah case terpenuhi, pengecekkan kondisi tidak akan diteruskan ke case-case setalahnya
+jadi tidak ada keyword break dalam case
+*/
 func main() {
 	i := 2
 	fmt.Print("Write ", i, " as ")
@@ -46,4 +51,16 @@ func main() {
 		}
 	}
 	whatAmI("Ini")
+	/**satu case dapat menampung banyak kondisi */
+	numberMoto := 48
+	switch numberMoto {
+	case 45:
+		fmt.Println("Welek")
+	//multiple kondisi
+	case 46, 47, 48, 49:
+		fmt.Println("Rossi")
+	default:
+		fmt.Println("anonymous")
+	}
+
 }
