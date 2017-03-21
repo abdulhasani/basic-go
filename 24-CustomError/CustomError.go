@@ -31,6 +31,7 @@ func main() {
 	if valid, err := validate(name); valid {
 		fmt.Println("hello", name)
 	} else {
-		fmt.Println(err.Error())
+		//fmt.Println(err.Error())
+		panic(err.Error()) //keyword panic menampil trace error
 	}
 }
