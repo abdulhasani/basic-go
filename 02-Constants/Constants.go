@@ -6,6 +6,7 @@ import (
 )
 
 //can use declares constant value
+//variabel yang valuenya tidak dapat diubah
 const gender string = "Male"
 
 func main() {
