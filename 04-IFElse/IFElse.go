@@ -4,6 +4,7 @@ import (
 	"fmt"
 )
 
+/**Pada go-lang tidak mendukung seleksi menggunakan ternary*/
 func main() {
 	//basic example
 	if true == true {
@@ -16,6 +17,7 @@ func main() {
 		fmt.Println("match")
 	}
 	//any variable, statement are available in all branches
+	//temporary variabel yang hanya bisa digunakan pada blok kondisi dimana ia ditempatkan
 	if num := 9; num < 0 {
 		fmt.Println(num, "is negative")
 	} else if num < 10 {
@@ -23,4 +25,6 @@ func main() {
 	} else {
 		fmt.Println(num, "has multiple digits")
 	}
+	//fmt.Println(num)
+	//variabel num hanya bisa pake pada branches if else tersebut
 }
