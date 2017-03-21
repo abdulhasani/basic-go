@@ -1,5 +1,6 @@
 # basic-go
-repo learn Go Lang
-contaion in this repo :
-HelloWorld Go
-Declaration Variabel
+Referensi Belajar dari 
+https://gobyexample.com
+https://dasarpemrogramangolang.novalagung.com
+
+terimakasih untuk kedua referensi tersebut. :D
