@@ -12,7 +12,7 @@ type student struct {
 
 /**
 cara deklarasi method sama seperti function, hanya saja perlu ditambahkan deklarasi variabel
-objek di sela-sela keyword func dan nama fungsi. Struct yang digunakan akan mnjadi pemilik method.
+objek di sela-sela keyword func dan nama fungsi. Struct yang digunakan akan mnjadi pemilik method.append
 */
 
 func (s student) sayHello() {
