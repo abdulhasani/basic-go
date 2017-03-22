@@ -1,8 +1,17 @@
 package library
 
-/**nama struct pake huruf kapital jika hendak dijadikan public begitu juga dengan
-propertynya*/
-type Student struct {
+import (
+	"fmt"
+)
+
+//struct ditampung dalam sebuah variabel
+var Student = struct {
 	Name  string
 	Grade int
+}{}
+
+func init() {
+	Student.Name = "Abdul Kadir Hasani"
+	Student.Grade = 24
+	fmt.Println("--> library/library.go imported")
 }
