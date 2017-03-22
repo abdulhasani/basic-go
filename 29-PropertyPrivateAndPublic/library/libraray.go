@@ -23,9 +23,3 @@ hanya bisa diakses oleh pada file tersebut saja
 func introduce(name string) {
 	f.Println("my name is ", name)
 }
-
-//jika hendak dipublic nama struct harus huruf besar dan nama propertynya juga
-type Student struct {
-	Name  string
-	Grade int
-}
