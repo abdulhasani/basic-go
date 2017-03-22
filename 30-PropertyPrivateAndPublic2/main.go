@@ -6,6 +6,10 @@ import (
 	"fmt"
 )
 
+/**
+jadi cara menjalankan filenya go run main.go partial.go
+karena dalam package main terdapat 2 file saling berhubungan
+*/
 func main() {
 	var s1 = Student{"Hasani", 24}
 	fmt.Println("name", s1.Name)

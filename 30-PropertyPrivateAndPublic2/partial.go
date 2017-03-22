@@ -1,5 +1,9 @@
 package main
 
-func sayHello(name string) {
+import (
+	"fmt"
+)
 
+func sayHello(name string) {
+	fmt.Println("my name is ", name)
 }
