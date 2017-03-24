@@ -5,7 +5,9 @@ import (
 	"os"
 )
 
-//deklarasi path and file, variabel global
+//deklarasi path and file, variabel global, my path linux os
+var path = "/home/hasani/go/test.txt"
+
 func checkError(err error) {
 	if err != nil {
 		fmt.Println(err.Error())
@@ -40,8 +42,6 @@ func witeFile() {
 	checkError(err)
 
 }
-
-var path = "/home/hasani/go/test.txt"
 
 func main() {
 	createFile()
