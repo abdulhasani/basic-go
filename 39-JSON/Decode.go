@@ -11,7 +11,7 @@ untuk kebutuhan operasi json
 */
 //hasil decode nantinya akan disimpan ke variable obejek cetakan struct User
 type User struct {
-	FullName string `json:"Name"`
+	FullName string `json:"Name"` //--> property pada struct user berupa FullName tapi ada untuk pengisian JSON menggunakan alias yaitu Name
 	Age      int
 }
 
