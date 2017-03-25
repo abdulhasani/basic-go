@@ -11,7 +11,7 @@ func main() {
 	if e != nil {
 		fmt.Println(e.Error())
 	}
-	fmt.Printf("url: s%\n", urlString)
+	fmt.Printf("url: %s\n", urlString)
 	fmt.Printf("protocol: %s\n", u.Scheme) //http
 	fmt.Printf("host: %s\n", u.Host)       //host
 	fmt.Printf("path: %s\n", u.Path)       //path
