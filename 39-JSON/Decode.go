@@ -36,5 +36,17 @@ func main() {
 	}
 	fmt.Println("user:", data.FullName)
 	fmt.Println("age:", data.Age)
+	//target decoding ke map[string]interface{}
+	var data1 map[string]interface{}
+	json.Unmarshal(jsonData, &data1)
+	fmt.Println("user:", data1["Name"])
+	fmt.Println("age:", data1["Age"])
+	//juga bisa menampung hasil decode dalam berntuk interface {}
+	//dengan catatan pada pengaksesan nilai property, harus dilakukan casting terlebih dahulu ke map[string]interface{}
+	var data2 interface{}
+	json.Unmarshal(jsonData, &data2)
+	var decodeData = data2.(map[string]interface{})
+	fmt.Println("user :", decodeData["Name"])
+	fmt.Println("age :", decodeData["Age"])
 
 }
