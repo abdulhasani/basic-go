@@ -48,5 +48,16 @@ func main() {
 	var decodeData = data2.(map[string]interface{})
 	fmt.Println("user :", decodeData["Name"])
 	fmt.Println("age :", decodeData["Age"])
-
+	//decode Array JSON ke Array objek
+	var jsonData2 = `[
+	{"Name": "Bridge Hasani", "Age": 24},
+	{"Name": "Dalban", "Age": 25}
+	]`
+	var data3 []*User
+	var warning = json.Unmarshal([]byte(jsonData2), &data3)
+	if warning != nil {
+		fmt.Println(warning.Error())
+	}
+	fmt.Println("user 1:", data3[0].FullName)
+	fmt.Println("user 2:", data3[1].FullName)
 }
